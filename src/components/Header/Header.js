@@ -14,9 +14,9 @@ function Header() {
     <div className="header-container">
       <Navbar className="Navbar" bg="dark" variant="dark">
         <Container fluid>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/React-TodoList">
             <img
-              alt=""
+              alt="todoicon"
               src="./todoIcon.png"
               className="d-inline-block align-top todoIcon"
             />{" "}
