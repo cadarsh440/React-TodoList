@@ -1,0 +1,16 @@
+.header-container .Navbar {
+    height: 120px;
+    padding-left: 45px;
+}
+
+.todoIcon {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+}
+
+.navbar-title {
+    position: absolute;
+    left: 170px;
+    top: 30px;
+}
