@@ -5,7 +5,7 @@ const url = "https://jsonplaceholder.typicode.com/todos";
 export const fetchTodo = async function () {
   let data = [];
   try {
-    const response = await fetch(url + "?userId=1");
+    const response = await fetch(url);
     data = await response.json();
     return {
       data,

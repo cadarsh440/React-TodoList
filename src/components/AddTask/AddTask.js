@@ -37,7 +37,7 @@ function AddTask(props) {
             height={52}
             style={{
               position: "absolute",
-              left: "410px",
+              left: "415px",
               paddingTop: "7px",
               zIndex: 2,
             }}
