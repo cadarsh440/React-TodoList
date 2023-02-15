@@ -24,6 +24,8 @@ function TodoContainer() {
   // setting up loading state
   const [isloading, setisLoading] = useState(true);
 
+  // setting up id manually
+  const [id, setId] = useState(201);
   // setting up todo state
   const [Todo, setTodo] = useState([]);
 
@@ -180,6 +182,7 @@ function TodoContainer() {
       ...notifications,
     });
 
+    console.log(id);
     const data = await addTaskHandler(title, userId);
 
     if (data.success) {
@@ -190,7 +193,12 @@ function TodoContainer() {
         ...notifications,
       });
 
+      // setting manual id to given element returned response
+      data.data.id = id;
+      setId(id+1);
+
       setTodo([data.data, ...Todo]);
+      
     } else {
       Store.addNotification({
         title: "Sorry",
