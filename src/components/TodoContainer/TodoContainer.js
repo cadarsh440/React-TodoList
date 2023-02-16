@@ -50,7 +50,7 @@ function TodoContainer() {
     },
   };
 
-  // using a useEffect hook for fetching and gettign all the todo after the component renders
+  // using a useEffect hook for fetching and getting all the todo after the component renders
   useEffect(() => {
     async function post() {
       Store.addNotification({
@@ -98,7 +98,7 @@ function TodoContainer() {
     });
   }
 
-  // setting up function for updatign the task
+  // setting up function for updating the task
   async function updateHandler(task, requested) {
     if (requested) {
       setisEdit({
@@ -195,10 +195,9 @@ function TodoContainer() {
 
       // setting manual id to given element returned response
       data.data.id = id;
-      setId(id+1);
+      setId(id + 1);
 
       setTodo([data.data, ...Todo]);
-      
     } else {
       Store.addNotification({
         title: "Sorry",
